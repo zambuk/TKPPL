@@ -129,6 +129,10 @@ pre[class*="language-"] {
   background-color: #00f;
   height: 200px;
 }
+.soal2 {
+  background-color: #00f;
+  height: 300px;
+}
 .header {
   background-color: #ff0;
   width: 100%;
@@ -141,4 +145,7 @@ pre[class*="language-"] {
 #life {
   float: right;
   margin-top: 8px;
+}
+.mulai {
+  background-color: #008000;
 }
