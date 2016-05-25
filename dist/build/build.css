@@ -119,28 +119,26 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
-.container{
-	width: 100%;
-	height: 100%;
-	background-color: #000000;
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
 }
-
-.soal{
-	margin-top: 10px;
-	background-color: blue;
-	height: 200px;
+.soal {
+  margin-top: 10px;
+  background-color: #00f;
+  height: 200px;
 }
-.header{
-	background-color: red;
-	width: 100%;
-	height: 35px;
+.header {
+  background-color: #ff0;
+  width: 100%;
+  height: 35px;
 }
-.level{
-	float:left;
-	margin-top: 8px;
+.level {
+  float: left;
+  margin-top: 8px;
 }
-
-#life{
-	float:right;
-	margin-top: 8px;
+#life {
+  float: right;
+  margin-top: 8px;
 }
