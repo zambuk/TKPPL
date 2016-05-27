@@ -1,39 +1,34 @@
-doctype html
-html
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title ZAP
-    link(rel='stylesheet', type='text/css', href='build/build.css')
-  body
-    article
-      section
-        h3 Quiz 8
-        .container
-          .header
-            p.level Level 8
-            p#life
-              img(src='images/fulllove.png')
-          .soal8
-            p#soal8
-            p
-              a(href='', style='color:black;') 1
-              |  = 5
-            p  2 = 25 
-            p  3 = 325 
-            p  4 = 4325 
-            p  5 = ? 
-            a(href='')
-              img(src='images/quiz8/A.png')
-            a(href='')
-              img(src='images/quiz8/B.png')
-            a(href='')
-              img(src='images/quiz8/C.png')
-            a(href='')
-              img(src='images/quiz8/D.png')
-    script(src='build/build.js')
-    script(src='build/main.js')
-    script.
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ZAP</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section>
+        <h3>Quiz 8</h3>
+        <div class="container">
+          <div class="header">
+            <p class="level">Level 8</p>
+            <p id="life"><img src="images/fulllove.png"></p>
+          </div>
+          <div class="soal8">
+            <p id="soal8"></p>
+            <p><a href="" style="color:black;">1</a> = 5</p>
+            <p> 2 = 25 </p>
+            <p> 3 = 325 </p>
+            <p> 4 = 4325 </p>
+            <p> 5 = ? </p><a href=""><img src="images/quiz8/A.png"></a><a href=""><img src="images/quiz8/B.png"></a><a href=""><img src="images/quiz8/C.png"></a><a href=""><img src="images/quiz8/D.png"></a>
+          </div>
+        </div>
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+    <script src="build/main.js"></script>
+    <script>
       myFunction();
       life = 3;
       var life1 = ["fulllove.png","emptylove.png","emptylove.png"];
@@ -57,3 +52,6 @@ html
       }
       }
       document.getElementById("life").innerHTML = templife;
+    </script>
+  </body>
+</html>
