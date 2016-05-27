@@ -129,6 +129,19 @@ pre[class*="language-"] {
   background-color: #00f;
   height: 200px;
 }
+.soal #soal {
+  font-size: 25px;
+  color: #f00;
+}
+.soal img {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 200px;
+  height: 70px;
+}
+.soal8 #soal8 {
+  padding-right: 10px;
+}
 .soal2 {
   background-color: #00f;
   height: 300px;
