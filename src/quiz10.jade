@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title ZAP
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    article
+      section
+        h3 Quiz 10
+        .container
+          .header
+            p.level Level 10
+            p#life
+              img(src='images/fulllove.png')
+          .soal
+            p#soal
+            p
+              | Dalam lomba balap motor, Jika anda menyalip orang/raider di posisi terakhir, sekarang anda berada di posisi...?
+            a(href='', style='color:green;')
+              p No 1
+            a(href='', style='color:green;')
+              p No 2 dari terakhir
+            a(href='', style='color:green;')
+              p No 2 dari depan
+            a(href='', style='color:green;')
+              p No terakhir
+    script(src='build/build.js')
+    script(src='build/main.js')
+    script.
+      myFunction();
+      life = 3;
+      var life1 = ["fulllove.png","emptylove.png","emptylove.png"];
+      var life2 = ["fulllove.png","fulllove.png","emptylove.png"];
+      var life3 = ["fulllove.png","fulllove.png","fulllove.png"];
+      var i;
+      var templife="";
+      for(i = 0;i<3;i++)
+      {
+      if(life == 1)
+      {
+      templife += "<img src='images/"+life1[i]+"'"+">"+"  ";
+      }
+      else if(life==2)
+      {
+      templife += "<img src='images/"+life2[i]+"'"+">"+"  ";
+      }
+      else if(life==3)
+      {
+      templife += "<img src='images/"+life3[i]+"'"+">"+"  ";
+      }
+      }
+      document.getElementById("life").innerHTML = templife;
