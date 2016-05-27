@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ZAP</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section>
+        <h3>Quiz 11</h3>
+        <div class="container"> 
+		    <div class="header">
+		    	<p class="level">Level 11</p>
+		    	<p id="life"><img src="images/fulllove.png"></p>
+		    </div>
+        	<div class="soal">
+        		<p  id="soal"></p>
+                <p> Seorang bisu pergi ke toko dan ingin membeli sikat gigi. Dengan menirukan orang menggosok gigi, ia berhasil menyampaikan keinginannya pada penjaga toko dan ia berhasil membeli sikat gigi...</p>
+                <p>Berikutnya, seorang buta masuk ke toko itu dan ingin membeli kacamata hitam, bagaimana DIA menunjukkan keinginannya?</p>
+                <a href="" style="color:green;"><p>Menunjuk kaca mata hitam</p></a>
+                <a href="" style="color:green;"><p>Meniru orang memakai kacamata</p></a>
+                <a href="" style="color:green;"><p>Ngomong langsung</p></a>
+                <a href="" style="color:green;"><p>Melakukan isyarat</p></a>
+
+        		  
+                
+        	</div>
+        	
+        </div>
+      </section>
+        
+      
+    </article>
+    <script src="build/build.js"></script>
+    <script src="build/main.js"></script>   
+       
+    
+    <script>
+        myFunction();
+        life = 3;
+        var life1 = ["fulllove.png","emptylove.png","emptylove.png"];
+        var life2 = ["fulllove.png","fulllove.png","emptylove.png"];
+    	var life3 = ["fulllove.png","fulllove.png","fulllove.png"];
+    	var i;
+    	var templife="";
+    	for(i = 0;i<3;i++)
+    	{
+            if(life == 1)
+            {
+                templife += "<img src='images/"+life1[i]+"'"+">"+"  ";
+            }
+            else if(life==2)
+            {
+                templife += "<img src='images/"+life2[i]+"'"+">"+"  ";
+            }
+            else if(life==3)
+            {
+                templife += "<img src='images/"+life3[i]+"'"+">"+"  ";
+            }
+    		
+    	}
+    	document.getElementById("life").innerHTML = templife;
+    </script>
+  </body>
+</html>
