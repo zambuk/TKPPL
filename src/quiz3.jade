@@ -16,37 +16,19 @@ html
               img(src='images/fulllove.png')
           .soal
             p#soal ?ACAB ASIB ADNA HAKAPA
-            a(href='')
-              img(src='images/quiz3/eaatt.png')
-            a(href='')
-              img(src='images/quiz3/hah.png')
-            a(href='')
-              img(src='images/quiz3/ay.png')
-            a(href='')
-              img(src='images/quiz3/gak paham.png')
+            a(href='#', onclick='False()')
+              img#false(src='images/quiz3/eaatt.png')
+            a(href='#', onclick='False()')
+              img#false1(src='images/quiz3/hah.png')
+            a(href='#')
+              img#true(src='images/quiz3/ay.png')
+            a(href='#', onclick='False()')
+              img#false2(src='images/quiz3/gak paham.png')
     script(src='build/build.js')
     script(src='build/main.js')
     script.
-      myFunction();
-      life = 3;
-      var life1 = ["fulllove.png","emptylove.png","emptylove.png"];
-      var life2 = ["fulllove.png","fulllove.png","emptylove.png"];
-      var life3 = ["fulllove.png","fulllove.png","fulllove.png"];
-      var i;
-      var templife="";
-      for(i = 0;i<3;i++)
-      {
-      if(life == 1)
-      {
-      templife += "<img src='images/"+life1[i]+"'"+">"+"  ";
+      myFunctionLife();
+      count = 0;
+      document.getElementById("true").onclick = function()                     {
+      location.href="quiz4.html";
       }
-      else if(life==2)
-      {
-      templife += "<img src='images/"+life2[i]+"'"+">"+"  ";
-      }
-      else if(life==3)
-      {
-      templife += "<img src='images/"+life3[i]+"'"+">"+"  ";
-      }
-      }
-      document.getElementById("life").innerHTML = templife;

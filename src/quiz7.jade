@@ -17,41 +17,23 @@ html
           .soal
             p#soal
             p Level Binary
-            a(href='', style='color:green;')
+            a(href='#', style='color:green;', onclick='False()')
               p 0001
-            a(href='', style='color:green;')
+            a(href='#', style='color:green;', onclick='False()')
               p 0011
-            a(href='', style='color:green;')
+            a#true(href='#', style='color:green;')
               p 0111
-            a(href='', style='color:green;')
+            a(href='#', style='color:green;', onclick='False()')
               p 1111
-            a(href='', style='color:green;')
+            a(href='#', style='color:green;', onclick='False()')
               p 1000
-            a(href='', style='color:green;')
+            a(href='#', style='color:green;', onclick='False()')
               p 1101
     script(src='build/build.js')
     script(src='build/main.js')
     script.
-      myFunction();
-      life = 3;
-      var life1 = ["fulllove.png","emptylove.png","emptylove.png"];
-      var life2 = ["fulllove.png","fulllove.png","emptylove.png"];
-      var life3 = ["fulllove.png","fulllove.png","fulllove.png"];
-      var i;
-      var templife="";
-      for(i = 0;i<3;i++)
-      {
-      if(life == 1)
-      {
-      templife += "<img src='images/"+life1[i]+"'"+">"+"  ";
+      myFunctionLife();
+      count = 0;
+      document.getElementById("true").onclick = function()                     {
+      location.href="quiz8.html";
       }
-      else if(life==2)
-      {
-      templife += "<img src='images/"+life2[i]+"'"+">"+"  ";
-      }
-      else if(life==3)
-      {
-      templife += "<img src='images/"+life3[i]+"'"+">"+"  ";
-      }
-      }
-      document.getElementById("life").innerHTML = templife;

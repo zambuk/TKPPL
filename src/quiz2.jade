@@ -13,377 +13,44 @@ html
           .header
             p.level Level 2
             p#life
-          .soal2
-            p#soal
-            img(src='images/quiz2/quiz2.png', alt='cicle', usemap='#cicle')
-            map(name='cicle')
-              area#false(shape='circle', coords='60,85,30', alt='Sun')
-              area#false1(shape='circle', coords='10,127,30', alt='Sun')
-              area#true(shape='circle', coords='124,93,2', alt='Venus')
-              area#false2(shape='circle', coords='124,165,36', alt='Venus')
-              area#false3(shape='circle', coords='54,173,36', alt='Venus')
-              area#false4(shape='circle', coords='100,218,5', alt='Venus')
-              area#false5(shape='circle', coords='75,248,8', alt='Venus')
-              area#false6(shape='circle', coords='77,315,30', alt='Venus')
-              area#false7(shape='circle', coords='170,209,8', alt='Venus')
-              area#false8(shape='circle', coords='177,93,20', alt='Venus')
-              area#false9(shape='circle', coords='228,75,13', alt='Venus')
-              area#false10(shape='circle', coords='190,263,10', alt='Venus')
-              area#false11(shape='circle', coords='246,225,16', alt='Venus')
-              area#false12(shape='circle', coords='277,143,47', alt='Venus')
-              area#false13(shape='circle', coords='332,93,12', alt='Venus')
-              area#false14(shape='circle', coords='385,132,43', alt='Venus')
-              area#false15(shape='circle', coords='320,207,7', alt='Venus')
-              area#false16(shape='circle', coords='370,223,5', alt='Venus')
-              area#false17(shape='circle', coords='295,280,11', alt='Venus')
-              area#false18(shape='circle', coords='365,295,23', alt='Venus')
+        .soal2
+          p#soal
+          img(src='images/quiz2/quiz2.png', alt='cicle', usemap='#cicle')
+          map(name='cicle')
+            area(shape='circle', coords='60,85,30', onclick='False()')
+            area(shape='circle', coords='10,127,30', onclick='False()')
+            area#true(shape='circle', coords='124,93,2')
+            area(shape='circle', coords='124,165,36', onclick='False()')
+            area(shape='circle', coords='54,173,36', onclick='False()')
+            area(shape='circle', coords='100,218,5', onclick='False()')
+            area(shape='circle', coords='75,248,8', onclick='False()')
+            area(shape='circle', coords='77,315,30', onclick='False()')
+            area(shape='circle', coords='170,209,8', onclick='False()')
+            area(shape='circle', coords='177,93,20', onclick='False()')
+            area(shape='circle', coords='228,75,13', onclick='False()')
+            area(shape='circle', coords='190,263,10', onclick='False()')
+            area(shape='circle', coords='246,225,16', onclick='False()')
+            area(shape='circle', coords='277,143,47', onclick='False()')
+            area(shape='circle', coords='332,93,12', onclick='False()')
+            area(shape='circle', coords='385,132,43', onclick='False()')
+            area(shape='circle', coords='320,207,7', onclick='False()')
+            area(shape='circle', coords='370,223,5', onclick='False()')
+            area(shape='circle', coords='295,280,11', onclick='False()')
+            area(shape='circle', coords='365,295,23', onclick='False()')
     script(src='build/build.js')
     script(src='build/main.js')
     script.
       myFunctionLife();
-      var count = 0;
-      document.getElementById("false").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false1").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false2").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false3").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false4").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false5").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false6").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false7").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false8").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false9").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false10").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false11").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false12").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false13").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false14").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false15").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false16").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false17").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("false18").onclick = function(){
-      count +=1;
-      if(count==1)
-      {
-      life = 1;
-      myFunctionLife(life);
-      }
-      else if(count==2)
-      {
-      life=2;
-      myFunctionLife(life);
-      }
-      else if(count==3)
-      {
-      life=3;
-      myFunctionLife(life);
-      }
-      }
-      document.getElementById("true").onclick = function(){
-      alert("Benar");
-      }
+      count = 0;
+      document.getElementById("true").onclick = function()                     {
+      location.href="quiz3.html";
+      }
+      //        window.onbeforeunload = function()
+      //        {
+      //            return "Tidak Boleh Curang";
+      //        }
+      //        $(document).keydown(function(objEvent) {
+      //            if (objEvent.keyCode == 9) {  //tab pressed
+      //                objEvent.preventDefault(); // stops its action
+      //            }
+      //        })
