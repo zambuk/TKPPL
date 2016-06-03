@@ -12,16 +12,16 @@
         <h3>Quiz 9</h3>
         <div class="container"> 
             <div class="header">
-                <p class="level">Level <a href="#" id="true" style="color:black;">9</a></p>
+                <p class="level">Level <a href="" style="color:black;">9</a></p>
                 <p id="life"><img src="images/fulllove.png"></p>
             </div>
             <div class="soal">
                 <p  id="soal"></p>
                 <p>5<sup><sup>2</sup></sup>- 6 - (5<sup><sup>2</sup></sup>- 3 x 5) + ((2 x 0) + 4) x 0)</p>
-                <a href="#" style="color:purple" onclick="False()"><p>25</p></a>
-                <a href="#" style="color:red;" onclick="False()"><p>16</p></a>
-                <a href="#" style="color:blue;" onclick="False()"><p>45</p></a>
-                <a href="#" style="color:green;" onclick="False()"><p>36</p></a>
+                <a href="" style="color:purple"><p>25</p></a>
+                <a href="" style="color:red;"><p>16</p></a>
+                <a href="" style="color:blue;"><p>45</p></a>
+                <a href="" style="color:green;"><p>36</p></a>
                 
                   
                 
@@ -37,11 +37,30 @@
        
     
     <script>
-          myFunctionLife();
-        count = 0;
-        document.getElementById("true").onclick = function()                     {
-            location.href="quiz10.html";
+        myFunction();
+        life = 3;
+        var life1 = ["fulllove.png","emptylove.png","emptylove.png"];
+        var life2 = ["fulllove.png","fulllove.png","emptylove.png"];
+        var life3 = ["fulllove.png","fulllove.png","fulllove.png"];
+        var i;
+        var templife="";
+        for(i = 0;i<3;i++)
+        {
+            if(life == 1)
+            {
+                templife += "<img src='images/"+life1[i]+"'"+">"+"  ";
+            }
+            else if(life==2)
+            {
+                templife += "<img src='images/"+life2[i]+"'"+">"+"  ";
+            }
+            else if(life==3)
+            {
+                templife += "<img src='images/"+life3[i]+"'"+">"+"  ";
+            }
+            
         }
+        document.getElementById("life").innerHTML = templife;
     </script>
   </body>
 </html>

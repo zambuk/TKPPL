@@ -38,30 +38,3 @@ function myFunctionLife(param)
     }
     document.getElementById("life").innerHTML = templife;
 }
-
-function False()
-    {
-        count++;
-        console.log("count "+count);
-        if(count==1)
-        {
-            life = 1;
-            myFunctionLife(life);
-        }
-        else if(count==2)
-        {
-            life=2;
-            myFunctionLife(life);
-        }
-        else if(count==3)
-        {
-            life=3;
-            myFunctionLife(life);
-        }
-        else if(count ==4)
-        {
-            life = 0;
-             myFunctionLife(life);
-        }
-
-    }

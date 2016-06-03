@@ -122,14 +122,15 @@ pre[class*="language-"] {
 .container {
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: white;
+  font-family: Comic Sans MS;
 }
 .soal {
-  margin-top: 10px;
-  background-color: #00f;
-  height: 200px;
+  background-color: white;
+  height: 300px;
 }
 .soal #soal {
+  padding-top: 20px;
   font-size: 25px;
   color: #f00;
 }
@@ -139,6 +140,7 @@ pre[class*="language-"] {
   width: 200px;
   height: 70px;
 }
+
 .soal8 #soal8 {
   padding-right: 10px;
 }

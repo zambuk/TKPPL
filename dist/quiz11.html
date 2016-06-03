@@ -19,10 +19,10 @@
         		<p  id="soal"></p>
                 <p> Seorang bisu pergi ke toko dan ingin membeli sikat gigi. Dengan menirukan orang menggosok gigi, ia berhasil menyampaikan keinginannya pada penjaga toko dan ia berhasil membeli sikat gigi...</p>
                 <p>Berikutnya, seorang buta masuk ke toko itu dan ingin membeli kacamata hitam, bagaimana DIA menunjukkan keinginannya?</p>
-                <a href="#" style="color:green;" onclick="False()"><p>Menunjuk kaca mata hitam</p></a>
-                <a href="#" style="color:green;" onclick="False()"><p>Meniru orang memakai kacamata</p></a>
-                <a href="#" style="color:green;" id="true"><p>Ngomong langsung</p></a>
-                <a href="#" style="color:green;" onclick="False()"><p>Melakukan isyarat</p></a>
+                <a href="" style="color:green;"><p>Menunjuk kaca mata hitam</p></a>
+                <a href="" style="color:green;"><p>Meniru orang memakai kacamata</p></a>
+                <a href="" style="color:green;"><p>Ngomong langsung</p></a>
+                <a href="" style="color:green;"><p>Melakukan isyarat</p></a>
 
         		  
                 
@@ -38,11 +38,30 @@
        
     
     <script>
-          myFunctionLife();
-        count = 0;
-        document.getElementById("true").onclick = function()                     {
-            location.href="quiz12.html";
-        }
+        myFunction();
+        life = 3;
+        var life1 = ["fulllove.png","emptylove.png","emptylove.png"];
+        var life2 = ["fulllove.png","fulllove.png","emptylove.png"];
+    	var life3 = ["fulllove.png","fulllove.png","fulllove.png"];
+    	var i;
+    	var templife="";
+    	for(i = 0;i<3;i++)
+    	{
+            if(life == 1)
+            {
+                templife += "<img src='images/"+life1[i]+"'"+">"+"  ";
+            }
+            else if(life==2)
+            {
+                templife += "<img src='images/"+life2[i]+"'"+">"+"  ";
+            }
+            else if(life==3)
+            {
+                templife += "<img src='images/"+life3[i]+"'"+">"+"  ";
+            }
+    		
+    	}
+    	document.getElementById("life").innerHTML = templife;
     </script>
   </body>
 </html>

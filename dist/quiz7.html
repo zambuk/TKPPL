@@ -18,12 +18,12 @@
         	<div class="soal">
         		<p  id="soal"></p>
                 <p>Level Binary</p>
-                <a href="#" style="color:green;" onclick="False()"><p>0001</p></a>
-                <a href="#" style="color:green;" onclick="False()"><p>0011</p></a>
-                <a href="#" style="color:green;" id="true"><p>0111</p></a>
-                <a href="#" style="color:green;" onclick="False()"><p>1111</p></a>
-                <a href="#" style="color:green;" onclick="False()"><p>1000</p></a>
-                <a href="#" style="color:green;" onclick="False()"><p>1101</p></a>
+                <a href="" style="color:green;"><p>0001</p></a>
+                <a href="" style="color:green;"><p>0011</p></a>
+                <a href="" style="color:green;"><p>0111</p></a>
+                <a href="" style="color:green;"><p>1111</p></a>
+                <a href="" style="color:green;"><p>1000</p></a>
+                <a href="" style="color:green;"><p>1101</p></a>
         		  
                 
         	</div>
@@ -38,11 +38,30 @@
        
     
     <script>
-         myFunctionLife();
-        count = 0;
-        document.getElementById("true").onclick = function()                     {
-            location.href="quiz8.html";
-        }
+        myFunction();
+        life = 3;
+        var life1 = ["fulllove.png","emptylove.png","emptylove.png"];
+        var life2 = ["fulllove.png","fulllove.png","emptylove.png"];
+    	var life3 = ["fulllove.png","fulllove.png","fulllove.png"];
+    	var i;
+    	var templife="";
+    	for(i = 0;i<3;i++)
+    	{
+            if(life == 1)
+            {
+                templife += "<img src='images/"+life1[i]+"'"+">"+"  ";
+            }
+            else if(life==2)
+            {
+                templife += "<img src='images/"+life2[i]+"'"+">"+"  ";
+            }
+            else if(life==3)
+            {
+                templife += "<img src='images/"+life3[i]+"'"+">"+"  ";
+            }
+    		
+    	}
+    	document.getElementById("life").innerHTML = templife;
     </script>
   </body>
 </html>
