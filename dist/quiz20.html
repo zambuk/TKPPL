@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ZAP</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section>
+        <h3>Quiz 20</h3>
+        <div class="container"> 
+		    <div class="header">
+		    	<p class="level">Level 20</p>
+		    	<p id="life"><img src="images/fulllove.png"></p>
+		    </div>
+        	<div class="soal">
+        		<p id="soal">DEFINE = EARTH</p>
+                <a href=""><img src="images/quiz20/1.png"></a>
+                <a href=""><img src="images/quiz20/2.png"></a>
+                <a href=""><img src="images/quiz20/3.png"></a>
+                <a href=""><img src="images/quiz20/4.png"></a>	              
+        	</div>      	
+        </div>
+      </section>
+        
+      
+    </article>
+    <script src="build/build.js"></script>
+    <script src="build/main.js"></script>   
+       
+    
+    <script>
+        myFunction();
+        life = 3;
+        var life1 = ["fulllove.png","emptylove.png","emptylove.png"];
+        var life2 = ["fulllove.png","fulllove.png","emptylove.png"];
+    	var life3 = ["fulllove.png","fulllove.png","fulllove.png"];
+    	var i;
+    	var templife="";
+    	for(i = 0;i<3;i++)
+    	{
+            if(life == 1)
+            {
+                templife += "<img src='images/"+life1[i]+"'"+">"+"  ";
+            }
+            else if(life==2)
+            {
+                templife += "<img src='images/"+life2[i]+"'"+">"+"  ";
+            }
+            else if(life==3)
+            {
+                templife += "<img src='images/"+life3[i]+"'"+">"+"  ";
+            }
+    		
+    	}
+    	document.getElementById("life").innerHTML = templife;
+    </script>
+  </body>
+</html>
