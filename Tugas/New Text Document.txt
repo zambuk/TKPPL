@@ -1,4 +1,0 @@
-Nanti u buat file u disini aja 
-file apa ?? file project u lah, wkwkwk
-biar gk mengganggu master
-tapi sekali u git pull master, file u hilang semua, yang ada sisa file master di tempatmu
