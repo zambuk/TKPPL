@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title ZAP
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    article
+      section
+        h3 Quiz 25
+        .container
+          .header
+            p.level Level 25
+            p#life
+              img(src='images/fulllove.png')
+          .soal
+            p#soal Ada berapa org kah yang bernama Agus Dikelas ini?
+            a(href='#', onclick='False()')
+              img(src='images/quiz25/1.png')
+            a#true(href='#')
+              img(src='images/quiz25/2.png')
+            a(href='#', onclick='False()')
+              img(src='images/quiz25/3.png')
+            a(href='#', onclick='False()')
+              img(src='images/quiz25/4.png')
+    script(src='build/build.js')
+    script(src='build/main.js')
+    script.
+      myFunctionLife();
+      count = 0;
+      document.getElementById("true").onclick = function()                     {
+      location.href="quiz26.html";
+      }

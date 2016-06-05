@@ -21,6 +21,7 @@ function myFunctionLife(param)
         if(life==0)
         {
             templife += "<img src='images/"+life0[i]+"'"+">"+"  ";
+            location.href="gameover.html";
         }
         else if(life == 1)
         {
@@ -37,6 +38,8 @@ function myFunctionLife(param)
 
     }
     document.getElementById("life").innerHTML = templife;
+    
+    
 }
 
 function False()
@@ -65,3 +68,15 @@ function False()
         }
 
     }
+
+function Joke()
+{
+    document.getElementById("input")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("input").click();
+        location.href="joke.html";
+    }
+});
+}
