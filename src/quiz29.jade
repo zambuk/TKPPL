@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 doctype html
 html
   head
@@ -32,3 +33,39 @@ html
       document.getElementById("true").onclick = function()                     {
       location.href="quiz30.html";
       }
+=======
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title ZAP
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    article
+      section
+        h3 Quiz 29
+        .container
+          .header
+            p.level Level 29
+            p#life
+              img(src='images/fulllove.png')
+          .soal
+            p#soal Apakah bentuk antena dikepala Tingky Wingky pada serial Teletubies ?
+            a(href='#', onclick='False()')
+              img(src='images/quiz29/1.png')
+            a(href='#', onclick='False()')
+              img(src='images/quiz29/2.png')
+            a#true(href='#')
+              img(src='images/quiz29/3.png')
+            a(href='#', onclick='False()')
+              img(src='images/quiz29/4.png')
+    script(src='build/build.js')
+    script(src='build/main.js')
+    script.
+      myFunctionLife();
+      count = 0;
+      document.getElementById("true").onclick = function()                     {
+      location.href="quiz30.html";
+      }
+>>>>>>> 9c5566d378b4eb453c7217bf7bdaaecb24559aec

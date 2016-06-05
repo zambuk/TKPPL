@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 doctype html
 html
   head
@@ -32,3 +33,39 @@ html
       document.getElementById("true").onclick = function()                     {
       location.href="quiz25.html";
       }
+=======
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title ZAP
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    article
+      section
+        h3 Quiz 24
+        .container
+          .header
+            p.level Level 24
+            p#life
+              img(src='images/fulllove.png')
+          .soal
+            p#soal Apakah warna huruf "l" pada logo Google?
+            a#true(href='#')
+              img(src='images/quiz24/1.png')
+            a(href='#', onclick='False()')
+              img(src='images/quiz24/2.png')
+            a(href='#', onclick='False()')
+              img(src='images/quiz24/3.png')
+            a(href='#', onclick='False()')
+              img(src='images/quiz24/4.png')
+    script(src='build/build.js')
+    script(src='build/main.js')
+    script.
+      myFunctionLife();
+      count = 0;
+      document.getElementById("true").onclick = function()                     {
+      location.href="quiz25.html";
+      }
+>>>>>>> 9c5566d378b4eb453c7217bf7bdaaecb24559aec

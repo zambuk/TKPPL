@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 doctype html
 html
   head
@@ -33,3 +34,40 @@ html
       document.getElementById("true").onclick = function()                     {
       location.href="quiz27.html";
       }
+=======
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title ZAP
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    article
+      section
+        h3 Quiz 26
+        .container
+          .header
+            p.level Level 26
+            p#life
+              img(src='images/fulllove.png')
+          .soal
+            p#soal
+              | Mikroskil memiliki banyak fasilitas misalnya elearning, mika, dan lain-lain. Maka dimanakah alamat Kampus B Mikroskil?
+            a(href='#', onclick='False()')
+              img(src='images/quiz26/1.png')
+            a(href='#', onclick='False()')
+              img(src='images/quiz26/2.png')
+            a#true(href='#')
+              img(src='images/quiz26/3.png')
+            a(href='#', onclick='False()')
+              img(src='images/quiz26/4.png')
+    script(src='build/build.js')
+    script(src='build/main.js')
+    script.
+      myFunctionLife();
+      count = 0;
+      document.getElementById("true").onclick = function()                     {
+      location.href="quiz27.html";
+      }
+>>>>>>> 9c5566d378b4eb453c7217bf7bdaaecb24559aec
