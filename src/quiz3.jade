@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title ZAP
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    article
+      section
+        h3 Quiz 3
+        .container
+          .header
+            p.level Level 3
+            p#life
+              img(src='images/fulllove.png')
+          .soal
+            p#soal ?ACAB ASIB ADNA HAKAPA
+            a(href='#', onclick='False()')
+              img#false(src='images/quiz3/eaatt.png')
+            a(href='#', onclick='False()')
+              img#false1(src='images/quiz3/hah.png')
+            a(href='#')
+              img#true(src='images/quiz3/ay.png')
+            a(href='#', onclick='False()')
+              img#false2(src='images/quiz3/gak paham.png')
+    script(src='build/build.js')
+    script(src='build/main.js')
+    script.
+      myFunctionLife();
+      count = 0;
+      document.getElementById("true").onclick = function()                     {
+      location.href="quiz4.html";
+      }

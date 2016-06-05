@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ZAP</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section>
+        <h3>Quiz 10</h3>
+        <div class="container"> 
+		    <div class="header">
+		    	<p class="level">Level 10</p>
+		    	<p id="life"><img src="images/fulllove.png"></p>
+		    </div>
+        	<div class="soal">
+        		<p  id="soal"></p>
+                <p>Dalam lomba balap MotoGp, Jika anda menyalip orang di posisi terakhir, sekarang anda berada di posisi...?</p>
+                <a href="#" style="color:green;" id="true"><p>No 1</p></a>
+                <a href="#" style="color:green;" onclick="False()"><p>No 2 dari terakhir</p></a>
+                <a href="#" style="color:green;" onclick="False()"><p>No 2 dari depan</p></a>
+                <a href="#" style="color:green;" onclick="False()"><p>No terakhir</p></a>
+
+        		  
+                
+        	</div>
+        	
+        </div>
+      </section>
+        
+      
+    </article>
+    <script src="build/build.js"></script>
+    <script src="build/main.js"></script>   
+       
+    
+    <script>
+         myFunctionLife();
+        count = 0;
+        document.getElementById("true").onclick = function()                     {
+            location.href="quiz11.html";
+        }
+    </script>
+  </body>
+</html>

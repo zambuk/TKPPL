@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title ZAP
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    article
+      section
+        h3 Quiz 1
+        .container
+          .header
+            p.level Level 1
+            p#life
+              img(src='images/fulllove.png')
+              | asd
+          .soal
+            p Siapa Nama Ahlaw?
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat.
+          p test
+    script(src='build/build.js')
+    script.
+      var life = ["0","1","2"];
+      var i;
+      var templife="";
+      for(i = 0;i<life.length;i++)
+      {
+      templife += life[i]+" ";
+      }
+      document.getElementById("life").innerHTML = templife;

@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title ZAP
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    article
+      section
+        h3 Quiz 4
+        .container
+          .header
+            p.level Level 4
+            p#life
+              img(src='images/fulllove.png')
+          .soal
+            p#soal APAKAH HURUF KELIMA DARI ALFABET ?
+            a(href='#')
+              img#true(src='images/quiz4/B.png')
+            a(href='#')
+              img(src='images/quiz4/C.png', onclick='False()')
+            a(href='#')
+              img(src='images/quiz4/D.png', onclick='False()')
+            a(href='#')
+              img(src='images/quiz4/E.png', onclick='False()')
+    script(src='build/build.js')
+    script(src='build/main.js')
+    script.
+      myFunctionLife();
+      count = 0;
+      document.getElementById("true").onclick = function()                     {
+      location.href="quiz5.html";
+      }

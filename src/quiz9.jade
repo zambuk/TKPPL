@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title ZAP
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    article
+      section
+        h3 Quiz 9
+        .container
+          .header
+            p.level
+              | Level 
+              a#true(href='#', style='color:black;') 9
+            p#life
+              img(src='images/fulllove.png')
+          .soal
+            p#soal
+            p
+              | 5
+              sup
+                sup 2
+              | - 6 - (5
+              sup
+                sup 2
+              | - 3 x 5) + ((2 x 0) + 4) x 0)
+            a(href='#', style='color:purple', onclick='False()')
+              p 25
+            a(href='#', style='color:red;', onclick='False()')
+              p 16
+            a(href='#', style='color:blue;', onclick='False()')
+              p 45
+            a(href='#', style='color:green;', onclick='False()')
+              p 36
+    script(src='build/build.js')
+    script(src='build/main.js')
+    script.
+      myFunctionLife();
+      count = 0;
+      document.getElementById("true").onclick = function()                     {
+      location.href="quiz10.html";
+      }

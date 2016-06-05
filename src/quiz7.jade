@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title ZAP
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    article
+      section
+        h3 Quiz 7
+        .container
+          .header
+            p.level Level 7
+            p#life
+              img(src='images/fulllove.png')
+          .soal
+            p#soal
+            p Level Binary
+            a(href='#', style='color:green;', onclick='False()')
+              p 0001
+            a(href='#', style='color:green;', onclick='False()')
+              p 0011
+            a#true(href='#', style='color:green;')
+              p 0111
+            a(href='#', style='color:green;', onclick='False()')
+              p 1111
+            a(href='#', style='color:green;', onclick='False()')
+              p 1000
+            a(href='#', style='color:green;', onclick='False()')
+              p 1101
+    script(src='build/build.js')
+    script(src='build/main.js')
+    script.
+      myFunctionLife();
+      count = 0;
+      document.getElementById("true").onclick = function()                     {
+      location.href="quiz8.html";
+      }

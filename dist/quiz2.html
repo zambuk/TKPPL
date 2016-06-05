@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ZAP</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section>
+        <h3>Quiz 2</h3>
+        <div class="container"> 
+		    <div class="header">
+		    	<p class="level">Level 2</p>
+		    	<p id="life"></p>
+		    </div>
+            
+        	</div>
+        	<div class="soal2">
+        		<p id="soal"></p>
+                <img src="images/quiz2/quiz2.png" alt="cicle" usemap="#cicle">  
+                <map name="cicle">
+                  <area shape="circle" coords="60,85,30" onclick="False()">
+                  <area shape="circle" coords="10,127,30" onclick="False()">
+                  <area shape="circle" coords="124,93,2" id="true">
+                  <area shape="circle" coords="124,165,36" onclick="False()">
+                  <area shape="circle" coords="54,173,36" onclick="False()">
+                  <area shape="circle" coords="100,218,5" onclick="False()">
+                  <area shape="circle" coords="75,248,8" onclick="False()">
+                  <area shape="circle" coords="77,315,30" onclick="False()">
+                  <area shape="circle" coords="170,209,8" onclick="False()">
+                  <area shape="circle" coords="177,93,20" onclick="False()">
+                  <area shape="circle" coords="228,75,13" onclick="False()">
+                  <area shape="circle" coords="190,263,10" onclick="False()">
+                  <area shape="circle" coords="246,225,16" onclick="False()">
+                  <area shape="circle" coords="277,143,47" onclick="False()">
+                  <area shape="circle" coords="332,93,12" onclick="False()">
+                  <area shape="circle" coords="385,132,43" onclick="False()">
+                  <area shape="circle" coords="320,207,7" onclick="False()">
+                  <area shape="circle" coords="370,223,5" onclick="False()">
+                  <area shape="circle" coords="295,280,11" onclick="False()">
+                  <area shape="circle" coords="365,295,23" onclick="False()">
+                </map>
+                
+                
+        </div>
+      </section>
+        
+      
+    </article>
+    <script src="build/build.js"></script>
+    <script src="build/main.js"></script>   
+       
+    
+    <script>
+        myFunctionLife();
+        count = 0;
+        document.getElementById("true").onclick = function()                     {
+            location.href="quiz3.html";
+        }
+//        window.onbeforeunload = function()
+//        {
+//            return "Tidak Boleh Curang";   
+//        }
+//        $(document).keydown(function(objEvent) {
+//            if (objEvent.keyCode == 9) {  //tab pressed
+//                objEvent.preventDefault(); // stops its action
+//            }
+//        })
+    </script>
+  </body>
+</html>
