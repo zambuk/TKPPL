@@ -17,10 +17,10 @@
 		    </div>
         	<div class="soal">
         		<p id="soal"><a href=""> <img src="images/quiz23/soal.png"></a><br>Berapakah lingkaran yang bergerak? </br></p>
-                <a href=""> <img src="images/quiz23/1.png"></a>
-                <a href=""> <img src="images/quiz23/2.png"></a>
-                <a href=""> <img src="images/quiz23/3.png"></a>
-                <a href=""> <img src="images/quiz23/4.png"></a>	              
+                <a href="#" onclick="False()"> <img src="images/quiz23/1.png"></a>
+                <a href="#" onclick="False()"> <img src="images/quiz23/2.png"></a>
+                <a href="#" id="true"> <img src="images/quiz23/3.png"></a>
+                <a href="#"onclick="False()"> <img src="images/quiz23/4.png"></a>	              
         	</div>      	
         </div>
       </section>
@@ -32,30 +32,11 @@
        
     
     <script>
-        myFunction();
-        life = 3;
-        var life1 = ["fulllove.png","emptylove.png","emptylove.png"];
-        var life2 = ["fulllove.png","fulllove.png","emptylove.png"];
-    	var life3 = ["fulllove.png","fulllove.png","fulllove.png"];
-    	var i;
-    	var templife="";
-    	for(i = 0;i<3;i++)
-    	{
-            if(life == 1)
-            {
-                templife += "<img src='images/"+life1[i]+"'"+">"+"  ";
-            }
-            else if(life==2)
-            {
-                templife += "<img src='images/"+life2[i]+"'"+">"+"  ";
-            }
-            else if(life==3)
-            {
-                templife += "<img src='images/"+life3[i]+"'"+">"+"  ";
-            }
-    		
-    	}
-    	document.getElementById("life").innerHTML = templife;
+        myFunctionLife();
+        count = 0;
+        document.getElementById("true").onclick = function()                     {
+            location.href="quiz24.html";
+        }
     </script>
   </body>
 </html>

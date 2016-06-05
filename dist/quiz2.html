@@ -15,32 +15,35 @@
 		    	<p class="level">Level 2</p>
 		    	<p id="life"></p>
 		    </div>
+            
+        	</div>
         	<div class="soal2">
         		<p id="soal"></p>
                 <img src="images/quiz2/quiz2.png" alt="cicle" usemap="#cicle">  
                 <map name="cicle">
-                  <area shape="circle" coords="60,85,30" alt="Sun" id="false">
-                  <area shape="circle" coords="10,127,30" alt="Sun" id="false1">
-                  <area shape="circle" coords="124,93,2" alt="Venus" id="true">
-                  <area shape="circle" coords="124,165,36" alt="Venus" id="false2">
-                  <area shape="circle" coords="54,173,36" alt="Venus" id="false3">
-                  <area shape="circle" coords="100,218,5" alt="Venus" id="false4">
-                  <area shape="circle" coords="75,248,8" alt="Venus" id="false5">
-                  <area shape="circle" coords="77,315,30" alt="Venus" id="false6">
-                  <area shape="circle" coords="170,209,8" alt="Venus" id="false7">
-                  <area shape="circle" coords="177,93,20" alt="Venus" id="false8">
-                  <area shape="circle" coords="228,75,13" alt="Venus" id="false9">
-                  <area shape="circle" coords="190,263,10" alt="Venus" id="false10">
-                  <area shape="circle" coords="246,225,16" alt="Venus" id="false11">
-                  <area shape="circle" coords="277,143,47" alt="Venus" id="false12">
-                  <area shape="circle" coords="332,93,12" alt="Venus" id="false13">
-                  <area shape="circle" coords="385,132,43" alt="Venus" id="false14">
-                  <area shape="circle" coords="320,207,7" alt="Venus" id="false15">
-                  <area shape="circle" coords="370,223,5" alt="Venus" id="false16">
-                  <area shape="circle" coords="295,280,11" alt="Venus" id="false17">
-                  <area shape="circle" coords="365,295,23" alt="Venus" id="false18">
+                  <area shape="circle" coords="60,85,30" onclick="False()">
+                  <area shape="circle" coords="10,127,30" onclick="False()">
+                  <area shape="circle" coords="124,93,2" id="true">
+                  <area shape="circle" coords="124,165,36" onclick="False()">
+                  <area shape="circle" coords="54,173,36" onclick="False()">
+                  <area shape="circle" coords="100,218,5" onclick="False()">
+                  <area shape="circle" coords="75,248,8" onclick="False()">
+                  <area shape="circle" coords="77,315,30" onclick="False()">
+                  <area shape="circle" coords="170,209,8" onclick="False()">
+                  <area shape="circle" coords="177,93,20" onclick="False()">
+                  <area shape="circle" coords="228,75,13" onclick="False()">
+                  <area shape="circle" coords="190,263,10" onclick="False()">
+                  <area shape="circle" coords="246,225,16" onclick="False()">
+                  <area shape="circle" coords="277,143,47" onclick="False()">
+                  <area shape="circle" coords="332,93,12" onclick="False()">
+                  <area shape="circle" coords="385,132,43" onclick="False()">
+                  <area shape="circle" coords="320,207,7" onclick="False()">
+                  <area shape="circle" coords="370,223,5" onclick="False()">
+                  <area shape="circle" coords="295,280,11" onclick="False()">
+                  <area shape="circle" coords="365,295,23" onclick="False()">
                 </map>
-        	</div>
+                
+                
         </div>
       </section>
         
@@ -52,352 +55,19 @@
     
     <script>
         myFunctionLife();
-        var count = 0;
-        document.getElementById("false").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
+        count = 0;
+        document.getElementById("true").onclick = function()                     {
+            location.href="quiz3.html";
         }
-        document.getElementById("false1").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false2").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false3").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false4").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false5").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false6").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false7").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false8").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false9").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false10").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false11").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false12").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false13").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false14").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false15").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false16").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false17").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-        document.getElementById("false18").onclick = function(){
-            count +=1;
-            if(count==1)
-            {
-                life = 1;
-                myFunctionLife(life);
-            }
-            else if(count==2)
-            {
-                life=2;
-                myFunctionLife(life);
-            }
-            else if(count==3)
-            {
-                life=3;
-                myFunctionLife(life);
-            }
-        }
-         document.getElementById("true").onclick = function(){
-            alert("Benar");
-        }
+//        window.onbeforeunload = function()
+//        {
+//            return "Tidak Boleh Curang";   
+//        }
+//        $(document).keydown(function(objEvent) {
+//            if (objEvent.keyCode == 9) {  //tab pressed
+//                objEvent.preventDefault(); // stops its action
+//            }
+//        })
     </script>
   </body>
 </html>

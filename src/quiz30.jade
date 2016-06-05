@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title ZAP
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    article
+      section
+        h3 Final Quiz
+        .container
+          .header
+            p.level Level 30
+            p#life
+              img(src='images/fulllove.png')
+          .soal
+            p#soal Manakah yang merupakan matanya Komisaris kita Boris Kumara
+            a(href='#', onclick='False()')
+              img(src='images/quiz30/1.png')
+            a(href='#', onclick='False()')
+              img(src='images/quiz30/2.png')
+            a(href='#', onclick='False()')
+              img(src='images/quiz30/3.png')
+            a#true(href='#')
+              img(src='images/quiz30/4.png')
+    script(src='build/build.js')
+    script(src='build/main.js')
+    script.
+      myFunctionLife();
+      count = 0;
+      document.getElementById("true").onclick = function()                     {
+      location.href="quiz30.html";
+      }

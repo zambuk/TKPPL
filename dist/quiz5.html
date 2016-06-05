@@ -17,10 +17,12 @@
 		    </div>
         	<div class="soal">
         		<p  id="soal">Di permainan DOTA, jika salah satu teman Anda mengefeed musuh, maka kata-kata yang sering digunakan adalah...</p>
-                <a href=""><p style="margin-left: 220px; text-align: left; color: red;"><b>A. ggwp</b></p></a>
-                <a href=""><p style="margin-left: 220px; text-align: left;color: red;"><b>B. p*ta ina</b></p></a>
-                <a href=""><p style="margin-left: 220px; text-align: left;color: red;"><b>C. cyk* bly*t</b></p></a>
-                <a href=""><p style="margin-left: 220px; text-align: left;color: red;"><b>D. enemy too strong</b></p></a>
+                <a href="#"  id = "true"><p style="margin-left: 220px; text-align: left; color: red;"><b>A. ggwp</b></p></a>
+                <a href="#" onclick="False()"><p style="margin-left: 220px; text-align: left;color: red;"><b>B. p*ta ina</b></p></a>
+                <a href="#" onclick="False()"><p style="margin-left: 220px; text-align: left;color: red;"><b>C. cyk* bly*t</b></p></a>
+                <a href="#" onclick="False()"><p style="margin-left: 220px; text-align: left;color: red;"><b>D. enemy too strong</b></p></a>
+                <a href="#" onclick="False()"><p style="margin-left: 220px; text-align: left;color: red;"><b>E. we lose, please end</b></p></a>
+                <a href="#" onclick="False()"><p style="margin-left: 220px; text-align: left;color: red;"><b>F. please leave feeder</b></p></a>
         		  
                 
         	</div>
@@ -35,30 +37,11 @@
        
     
     <script>
-        myFunction();
-        life = 3;
-        var life1 = ["fulllove.png","emptylove.png","emptylove.png"];
-        var life2 = ["fulllove.png","fulllove.png","emptylove.png"];
-    	var life3 = ["fulllove.png","fulllove.png","fulllove.png"];
-    	var i;
-    	var templife="";
-    	for(i = 0;i<3;i++)
-    	{
-            if(life == 1)
-            {
-                templife += "<img src='images/"+life1[i]+"'"+">"+"  ";
-            }
-            else if(life==2)
-            {
-                templife += "<img src='images/"+life2[i]+"'"+">"+"  ";
-            }
-            else if(life==3)
-            {
-                templife += "<img src='images/"+life3[i]+"'"+">"+"  ";
-            }
-    		
-    	}
-    	document.getElementById("life").innerHTML = templife;
+         myFunctionLife();
+        count = 0;
+        document.getElementById("true").onclick = function()                     {
+            location.href="quiz6.html";
+        }
     </script>
   </body>
 </html>

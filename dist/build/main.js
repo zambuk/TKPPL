@@ -21,6 +21,7 @@ function myFunctionLife(param)
         if(life==0)
         {
             templife += "<img src='images/"+life0[i]+"'"+">"+"  ";
+            location.href="gameover.html";
         }
         else if(life == 1)
         {
@@ -37,4 +38,45 @@ function myFunctionLife(param)
 
     }
     document.getElementById("life").innerHTML = templife;
+    
+    
+}
+
+function False()
+    {
+        count++;
+        console.log("count "+count);
+        if(count==1)
+        {
+            life = 1;
+            myFunctionLife(life);
+        }
+        else if(count==2)
+        {
+            life=2;
+            myFunctionLife(life);
+        }
+        else if(count==3)
+        {
+            life=3;
+            myFunctionLife(life);
+        }
+        else if(count ==4)
+        {
+            life = 0;
+             myFunctionLife(life);
+        }
+
+    }
+
+function Joke()
+{
+    document.getElementById("input")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("input").click();
+        location.href="joke.html";
+    }
+});
 }

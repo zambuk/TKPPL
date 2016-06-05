@@ -17,7 +17,7 @@
           </div>
           <div class="soal8">
             <p id="soal8"></p>
-            <p><a href="" style="color:black;">1</a> = 5</p>
+            <p><a href="#" style="color:black;" id="true">1</a> = 5</p>
             <p> 2 = 25 </p>
             <p> 3 = 325 </p>
             <p> 4 = 4325 </p>
@@ -29,29 +29,11 @@
     <script src="build/build.js"></script>
     <script src="build/main.js"></script>
     <script>
-      myFunction();
-      life = 3;
-      var life1 = ["fulllove.png","emptylove.png","emptylove.png"];
-      var life2 = ["fulllove.png","fulllove.png","emptylove.png"];
-      var life3 = ["fulllove.png","fulllove.png","fulllove.png"];
-      var i;
-      var templife="";
-      for(i = 0;i<3;i++)
-      {
-      if(life == 1)
-      {
-      templife += "<img src='images/"+life1[i]+"'"+">"+"  ";
-      }
-      else if(life==2)
-      {
-      templife += "<img src='images/"+life2[i]+"'"+">"+"  ";
-      }
-      else if(life==3)
-      {
-      templife += "<img src='images/"+life3[i]+"'"+">"+"  ";
-      }
-      }
-      document.getElementById("life").innerHTML = templife;
+        myFunctionLife();
+        count = 0;
+        document.getElementById("true").onclick = function(){
+            location.href="quiz9.html";
+        }
     </script>
   </body>
 </html>
