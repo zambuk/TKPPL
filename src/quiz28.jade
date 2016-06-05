@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title ZAP
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    article
+      section
+        h3 Quiz 28
+        .container
+          .header
+            p.level Level 28
+            p#life
+              img(src='images/fulllove.png')
+          .soal
+            p#soal
+              | Rio Haryanto merupakan pembalap F1 pertama dari Indonesia lalu berapa kalikah huruf a muncul ?
+            a(href='#', onclick='False()')
+              img(src='images/quiz28/1.png')
+            a(href='#', onclick='False()')
+              img(src='images/quiz28/2.png')
+            a#true(href='#')
+              img(src='images/quiz28/3.png')
+            a(href='#', onclick='False()')
+              img(src='images/quiz28/4.png')
+    script(src='build/build.js')
+    script(src='build/main.js')
+    script.
+      myFunctionLife();
+      count = 0;
+      document.getElementById("true").onclick = function()                     {
+      location.href="quiz29.html";
+      }
